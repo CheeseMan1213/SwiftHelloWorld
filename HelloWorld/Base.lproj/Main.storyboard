@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="PoW-Xf-DGj">
-                                <rect key="frame" x="83.5" y="189" width="208.5" height="289"/>
+                                <rect key="frame" x="83.5" y="289" width="208.5" height="289"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cheese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mO-Id-fvh" userLabel="cheeseLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="208.5" height="50"/>
@@ -45,11 +45,19 @@
                                 <color key="backgroundColor" red="0.22215179709999999" green="0.0097649549649999993" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="1" green="0.208103391" blue="0.20777286740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please type someting here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7o-ga-6NF">
+                                <rect key="frame" x="41.5" y="156" width="292" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PoW-Xf-DGj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CUJ-nQ-hSz"/>
+                            <constraint firstItem="PoW-Xf-DGj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="CUJ-nQ-hSz"/>
+                            <constraint firstItem="F7o-ga-6NF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TDC-1C-uLE"/>
                             <constraint firstItem="PoW-Xf-DGj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XEu-Qz-Or8"/>
+                            <constraint firstItem="PoW-Xf-DGj" firstAttribute="top" secondItem="F7o-ga-6NF" secondAttribute="bottom" constant="100" id="qLd-5H-O54"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
